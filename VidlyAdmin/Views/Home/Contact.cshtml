@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/VidlyAdmin.cshtml";
+}
+@section menu
+{
+    <a href="#" class="visible-phone"><i class="icon icon-envelope"></i> Contact</a>
+}
+<div id="content-header">
+    <div id="breadcrumb">
+        <a href=@Url.Action("Index","Home") title="Go to Home" class="tip-bottom"><i class="icon-home"></i>Home</a>
+        <a href="@Url.Action("Contact")" class="current">@ViewBag.Title</a>
+    </div>
+    <h1>@ViewBag.Message</h1>
+</div>
+<div class="container-fluid">
+    <address>
+        Kirtipur, Kathmandu, Nepal<br />
+        @*<abbr title="Phone">P:</abbr>
+            425.555.0100*@
+    </address>
+    <address>
+        <strong>Support:</strong>   <a href="mailto:contact@maheshyadav.com.np">contact@maheshyadav.com.np</a><br />
+        <strong>Marketing:</strong> <a href="mailto:contact@maheshyadav.com.np">contact@maheshyadav.com.np</a>
+    </address>
+</div>

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<VidlyAdmin.Models.Customer>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/VidlyAdmin.cshtml";
+}
+@section menu
+{
+    <a href="#" class="visible-phone"><i class="icon icon-user"></i> Customers</a>
+}
+<div id="content-header">
+    <div id="breadcrumb">
+        <a href=@Url.Action("Index","Home") title="Go to Home" class="tip-bottom"><i class="icon-home"></i>Home</a>
+        <a href="#" class="current">Customers</a>
+    </div>
+    <h1>Customers</h1>
+</div>
+<div class="container-fluid">
+    @if (!Model.Any())
+    {
+        <p>We don't have any customers yet.</p>
+    }
+    else
+    {
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="widget-box">
+                    <div class="widget-title">
+                        <span class="icon"><i class="icon-th"></i></span>
+                        <h5>Customer</h5>
+                    </div>
+                    <div class="widget-content nopadding">
+                        <table class="table table-bordered data-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Browser</th>
+                                    @*<th>Platform(s)</th>
+                                        <th>Engine version</th>*@
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var customer in Model)
+                                {
+                                    <tr>
+                                        <td>@Html.ActionLink(customer.Name, "Details", "Customers", new { id = customer.Id }, null)</td>
+                                        <td>Platform(s)</td>
+                                    </tr>
+
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/VidlyAdmin.cshtml";
+}
+@section menu
+{
+    <a href="#" class="visible-phone"><i class="icon icon-info-sign"></i> About</a>
+}
+<div id="content-header">
+    <div id="breadcrumb">
+        <a href=@Url.Action("Index","Home") title="Go to Home" class="tip-bottom"><i class="icon-home"></i>Home</a>
+        <a href="@Url.Action("About")" class="current">@ViewBag.Title</a>
+    </div>
+    <h1>@ViewBag.Message</h1>
+</div>
+<div class="container-fluid">
+    <p>Use this area to provide additional information.</p>
+</div>

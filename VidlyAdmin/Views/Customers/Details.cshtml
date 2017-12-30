@@ -1,0 +1,21 @@
+﻿@model VidlyAdmin.Models.Customer
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/VidlyAdmin.cshtml";
+}
+@section menu
+{
+    <a href="#" class="visible-phone"><i class="icon icon-info-sign"></i> Details</a>
+}
+<div id="content-header">
+    <div id="breadcrumb">
+        <a href=@Url.Action("Index","Home") title="Go to Home" class="tip-bottom"><i class="icon-home"></i>Home</a>
+        <a href="@Url.Action("Index")">Customers</a>
+        <a href="#" class="current">Details</a>
+    </div>
+    <h1>Details</h1>
+</div>
+
+<div class="container-fluid">
+    @Model.Name
+</div>
