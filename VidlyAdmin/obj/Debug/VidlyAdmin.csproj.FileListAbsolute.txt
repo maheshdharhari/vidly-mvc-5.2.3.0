@@ -140,3 +140,5 @@ C:\Users\Mahesh Kr. Yadav\Documents\Visual Studio 2017\Projects\New folder\Vidly
 C:\Users\Mahesh Kr. Yadav\Documents\Visual Studio 2017\Projects\New folder\VidlyAdmin\VidlyAdmin\obj\Debug\VidlyAdmin.csproj.CoreCompileInputs.cache
 C:\Users\Mahesh Kr. Yadav\Documents\Visual Studio 2017\Projects\New folder\VidlyAdmin\VidlyAdmin\obj\Debug\VidlyAdmin.dll
 C:\Users\Mahesh Kr. Yadav\Documents\Visual Studio 2017\Projects\New folder\VidlyAdmin\VidlyAdmin\obj\Debug\VidlyAdmin.pdb
+C:\Users\Mahesh Kr. Yadav\Documents\Visual Studio 2017\Projects\New folder\VidlyAdmin\VidlyAdmin\obj\Debug\VidlyAdmin.Migrations.InitialModel.resources
+C:\Users\Mahesh Kr. Yadav\Documents\Visual Studio 2017\Projects\New folder\VidlyAdmin\VidlyAdmin\obj\Debug\VidlyAdmin.csproj.GenerateResource.Cache
